@@ -11,7 +11,10 @@ const rewardsServiceRoute =
 const proxyRouter = {
   'api/Story': 'http://ec2-54-219-19-207.us-west-1.compute.amazonaws.com/',
   'api/RisksAndChallenges': 'http://ec2-54-219-19-207.us-west-1.compute.amazonaws.com/',
-  'api/EnvironmentalCommitments': 'http://ec2-54-219-19-207.us-west-1.compute.amazonaws.com/'
+  'api/EnvironmentalCommitments': 'http://ec2-54-219-19-207.us-west-1.compute.amazonaws.com/',
+
+  'api/update': 'http://ec2-3-15-166-80.us-east-2.compute.amazonaws.com:3001',
+  'api/comment': 'http://ec2-3-15-166-80.us-east-2.compute.amazonaws.com:3001'
 };
 
 app.use(express.static(path.join(__dirname, '../public')));
