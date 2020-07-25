@@ -14,7 +14,13 @@ const proxyRouter = {
   'api/EnvironmentalCommitments': 'http://ec2-54-219-19-207.us-west-1.compute.amazonaws.com/',
 
   'api/update': 'http://ec2-3-15-166-80.us-east-2.compute.amazonaws.com:3001',
-  'api/comment': 'http://ec2-3-15-166-80.us-east-2.compute.amazonaws.com:3001'
+  'api/comment': 'http://ec2-3-15-166-80.us-east-2.compute.amazonaws.com:3001',
+
+  // '/api/banner': 'http://localhost:3002',
+  // 'api/video': 'http://localhost:3002',
+
+  'api/projects': 'http://ec2-18-225-33-61.us-east-2.compute.amazonaws.com:3001',
+  'api/rewards': 'http://ec2-18-225-33-61.us-east-2.compute.amazonaws.com:3001',
 };
 
 app.use(express.static(path.join(__dirname, '../public')));
